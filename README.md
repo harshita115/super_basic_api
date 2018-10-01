@@ -1,2 +1,2 @@
 # Basic API using Flask
-Super basic sample with comments to make a simple API.
+Super basic example with comments to make a simple API.
