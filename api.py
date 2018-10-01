@@ -1,7 +1,6 @@
-import flask 
-from flask import request,jsonify
-app = flask.Flask(__name__)
-app.config["DEBUG"]=True
+from flask import Flask, request, jsonify
+app = Flask(__name__)
+
 @app.route('/',methods=['get'])
 def home():
 	return "<h1>Distant reading api</h1><p>this site is prototype for distant reading api</p>"
@@ -31,4 +30,4 @@ def random():
    		 results.append(book)
    return jsonify(results)
 
-app.run()
+app.run(debug = True)
