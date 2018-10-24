@@ -30,6 +30,8 @@ def random():
    		 results.append(book)
    return jsonify(results)
 
+# gangam style ;)
+
 @app.route('newbooks', methods=['get'])
 def new_books():
    id=int(request.args['id'])
@@ -38,6 +40,6 @@ def new_books():
          return {"Id already there"}
    books.append({'id':id,'value':value})
          return {'status':'ok'}
-
+# bla bla bla
 
 app.run(debug = True)
